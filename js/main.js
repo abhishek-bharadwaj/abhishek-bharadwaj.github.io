@@ -104,7 +104,7 @@ if($().circleProgress){
 		value: 0.75,
 		size: 175,
 		thickness: 2,
-		fill: "#ffffff",
+		fill: "#40424a",
 		emptyFill: "rgba(0, 0, 0, 0)"
 	});
 
