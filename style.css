@@ -2378,6 +2378,14 @@ figcaption {
     text-decoration: none;
 }
 
+.about-link {
+    display: inline-block;
+    -webkit-transition: opacity 400ms ease;
+    transition: opacity 400ms ease;
+    color: #333;
+    text-decoration: none;
+}
+
 .blog-title-link:hover {
     opacity: 0.61;
 }
