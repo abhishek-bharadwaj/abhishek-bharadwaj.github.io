@@ -127,16 +127,27 @@
 </body>
 
 <script>
-  document.getElementById("content_about").style.display = "none";
+  var btnHome = document.getElementById("btn_home")
+  var btnAbout = document.getElementById("btn_about")
+  btnHome.style.color = "#ebebeb";
+  btnAbout.style.color = "#969696";
+
+  var contentHome = document.getElementById("content_home")
+  var contentAbout = document.getElementById("content_about")
+  contentAbout.style.display = "none";
 
   function showHome() {
-    document.getElementById("content_home").style.display = "inherit";
-    document.getElementById("content_about").style.display = "none";
+    contentHome.style.display = "inherit";
+    contentAbout.style.display = "none";
+    btnHome.style.color = "#ebebeb";
+    btnAbout.style.color = "#969696";
   }
 
   function showAbout() {
-    document.getElementById("content_about").style.display = "inherit";
-    document.getElementById("content_home").style.display = "none";
+    contentAbout.style.display = "inherit";
+    contentHome.style.display = "none";
+    btnAbout.style.color = "#ebebeb";
+    btnHome.style.color = "#969696";
   }
 </script>
 
