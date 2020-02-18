@@ -642,57 +642,6 @@
 
         var Webflow = __webpack_require__(1);
 
-        Webflow.define('backgroundVideo', module.exports = function ($, _) {
-            var namespace = '.w-background-video';
-            var doc = $(document);
-
-            function ready() {
-                var backgroundVideoNodes = $(document).find('.w-background-video');
-                if (backgroundVideoNodes.length === 0) {
-                    return;
-                }
-
-                backgroundVideoNodes.each(function (_, node) {
-                    $(node).prepend(createVideoNode(node));
-                });
-            }
-
-            function createVideoNode(nativeNode) {
-                var nodeData = nativeNode.dataset;
-
-                if (!nodeData.videoUrls) {
-                    return $('<video />');
-                }
-
-                // Prevent loading the videos on mobile browsers as its likely that they
-                // are on low-bandwidth connections.
-                if (Webflow.isMobile()) {
-                    return $('<video />').css('background-image', 'url(' + nodeData.posterUrl + ')');
-                }
-
-                var videoURLs = nodeData.videoUrls.split(',');
-                var sourceNodes = videoURLs.map(function (url) {
-                    return $('<source />').attr({
-                        src: url,
-                        'data-wf-ignore': '',
-                    });
-                });
-
-                var videoNode = $('<video />').attr({
-                    autoplay: nodeData.autoplay,
-                    loop: nodeData.loop,
-                })
-                    .css('background-image', 'url(' + nodeData.posterUrl + ')');
-
-                videoNode.append(sourceNodes);
-
-                return videoNode;
-            }
-
-            return { ready: ready };
-        });
-
-
         /***/
 },
 /* 6 */
