@@ -2648,6 +2648,23 @@ figcaption {
     background-color: #5e5e5e;
 }
 
+.contact-link {
+    padding: 8px 16px;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    color: #333333;
+    border-style: groove;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contact-link:hover {
+    color: #67794f;
+}
+
 html.w-mod-js *[data-ix="fade-in-bottom-page-loads"] {
     opacity: 0;
     -webkit-transform: translate(0px, 50px);
