@@ -2382,8 +2382,9 @@ figcaption {
     display: inline-block;
     -webkit-transition: opacity 400ms ease;
     transition: opacity 400ms ease;
-    color: #333;
+    color: #272323;
     text-decoration: none;
+    font-weight: bold
 }
 
 .blog-title-link:hover {
