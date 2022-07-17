@@ -11,7 +11,7 @@ sudo service nginx restart
 /usr/share/nginx/html
 
 # Copy html content
-cp -a /source/. /dest/
+sudo cp -a ~/abhishek-bharadwaj.github.io/. ./
 
 # Certbot on AMI2
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2.html#letsencrypt
