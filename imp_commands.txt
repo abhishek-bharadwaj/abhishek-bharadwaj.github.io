@@ -1,0 +1,18 @@
+# Edit config
+vim /etc/nginx/nginx.conf
+
+# Test nginx
+sudo nginx -t
+
+# Restart nginx
+sudo service nginx restart
+
+# HTMl content
+/usr/share/nginx/html
+
+# Copy html content
+cp -a /source/. /dest/
+
+# Certbot on AMI2
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2.html#letsencrypt
+
